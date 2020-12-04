@@ -10,5 +10,5 @@ package edu.cuny.csi.connect4;
  * @author yomis
  */
 public enum Piece {
-    BLUE, RED;
+    HEAD, TAIL;
 }

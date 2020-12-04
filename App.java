@@ -5,6 +5,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import edu.cuny.csi.connect4.view.*;
 
 
 /**
@@ -14,18 +15,15 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) {
-        var javaVersion = SystemInfo.javaVersion();
-        var javafxVersion = SystemInfo.javafxVersion();
-
-        //var label = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
-        //var scene = new Scene(new StackPane(label), 640, 480);
-        //stage.setScene(scene);
-        var bg = new BackgroundPane();
-        var fg = new ForegroundPane();
+        //var javaVersion = SystemInfo.javaVersion();
+        //var javafxVersion = SystemInfo.javafxVersion();
+        
+        var sg = new BoardPane();
         var stack = new StackPane();
+        var bgp = new BGPane();
         var children = stack.getChildren();
-        children.add(bg);
-        children.add(fg);
+        //children.add(sg);
+        children.add(bgp);
         var scene = new Scene(stack, 640, 640);
         stage.setScene(scene);
         stage.show();
