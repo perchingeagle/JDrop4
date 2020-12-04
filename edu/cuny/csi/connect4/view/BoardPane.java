@@ -57,7 +57,7 @@ public class BoardPane extends Pane{
     
     
     /*
-    // this methods below are only here to test this class and it were used
+    // these methods below are only here to test this class and it were used
     // in designing it
     protected void draw(){
         Disc d1 = new Disc();
